@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Compare Builds — PC Forge</title>
+<meta name="description" content="Compare two saved PC builds side-by-side and see the differences." />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="brand"><span class="logo"></span> PC FORGE</a>
+    <button class="burger" id="burger">☰</button>
+    <div class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="builder.html">Builder</a>
+      <a href="components.html">Components</a>
+      <a href="compare.html">Compare</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<main class="container page">
+  <h1 class="section-title">Compare Builds</h1>
+  <p class="section-sub">Choose two saved builds to see them side-by-side. Differences are highlighted.</p>
+
+  <div id="compareEmpty" style="display:none" class="card">
+    <h3>No saved builds yet</h3>
+    <p class="meta" style="margin-top:8px">Head over to the <a href="builder.html" style="color:var(--primary)">Builder</a> and save at least two configurations to compare them here.</p>
+  </div>
+
+  <div class="compare-grid">
+    <div class="card">
+      <select id="buildA"></select>
+      <div id="paneA"><p class="meta">Select a build to compare.</p></div>
+    </div>
+    <div class="card">
+      <select id="buildB"></select>
+      <div id="paneB"><p class="meta">Select a build to compare.</p></div>
+    </div>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="copyright">© 2026 PC Forge. Crafted for gamers, by gamers.</div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

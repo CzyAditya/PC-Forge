@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Contact — PC Forge</title>
+<meta name="description" content="Get in touch with the PC Forge team." />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="brand"><span class="logo"></span> PC FORGE</a>
+    <button class="burger" id="burger">☰</button>
+    <div class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="builder.html">Builder</a>
+      <a href="components.html">Components</a>
+      <a href="compare.html">Compare</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<main class="container page">
+  <h1 class="section-title">Get In Touch</h1>
+  <p class="section-sub">Questions, feedback, partnership ideas? Drop us a line.</p>
+
+  <form id="contactForm" class="form" novalidate>
+    <div id="formAlert"></div>
+
+    <div class="field">
+      <label for="name">Name</label>
+      <input id="name" name="name" type="text" placeholder="Your full name" />
+      <div class="err" data-err="name"></div>
+    </div>
+
+    <div class="field">
+      <label for="email">Email</label>
+      <input id="email" name="email" type="email" placeholder="you@example.com" />
+      <div class="err" data-err="email"></div>
+    </div>
+
+    <div class="field">
+      <label for="subject">Subject</label>
+      <input id="subject" name="subject" type="text" placeholder="What's this about?" />
+      <div class="err" data-err="subject"></div>
+    </div>
+
+    <div class="field">
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="6" placeholder="Tell us more..."></textarea>
+      <div class="err" data-err="message"></div>
+    </div>
+
+    <button type="submit" class="btn btn-primary btn-block">Send Message →</button>
+  </form>
+</main>
+
+<footer class="footer">
+  <div class="copyright">© 2026 PC Forge. Crafted for gamers, by gamers.</div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

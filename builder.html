@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>PC Builder — PC Forge</title>
+<meta name="description" content="Customize your CPU, GPU, RAM and more. Real-time pricing and compatibility checking." />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="brand"><span class="logo"></span> PC FORGE</a>
+    <button class="burger" id="burger">☰</button>
+    <div class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="builder.html">Builder</a>
+      <a href="components.html">Components</a>
+      <a href="compare.html">Compare</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<main class="container page">
+  <h1 class="section-title">PC Builder</h1>
+  <p class="section-sub">Pick a part for each slot. Compatibility and price update live.</p>
+
+  <div class="builder-layout">
+    <div id="partsList" class="parts-list"></div>
+
+    <aside class="summary">
+      <h3>Build Summary</h3>
+      <div class="row"><span>Parts</span><span id="sumCount">0 / 7 parts</span></div>
+      <div class="row"><span>Performance</span><span id="sumPerfLabel">0 / 100</span></div>
+      <div class="perf-bar"><span id="sumPerf"></span></div>
+      <div class="row" style="margin-top:14px"><span>Total</span><span class="total" id="sumTotal">$0</span></div>
+      <div id="compat" class="compat">Start selecting parts to check compatibility.</div>
+      <div style="display:flex;gap:8px;margin-top:16px">
+        <button class="btn btn-primary btn-block" id="saveBtn">💾 Save Build</button>
+        <button class="btn btn-ghost" id="resetBtn">Reset</button>
+      </div>
+
+      <h4 style="margin-top:24px;font-size:.9rem;letter-spacing:1px;color:var(--primary)">SAVED BUILDS</h4>
+      <div class="saved-list" id="savedList"></div>
+    </aside>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="copyright">© 2026 PC Forge. Crafted for gamers, by gamers.</div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

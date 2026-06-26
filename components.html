@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Components — PC Forge</title>
+<meta name="description" content="Browse all CPUs, GPUs, RAM, motherboards, storage, PSUs and cases." />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="brand"><span class="logo"></span> PC FORGE</a>
+    <button class="burger" id="burger">☰</button>
+    <div class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="builder.html">Builder</a>
+      <a href="components.html">Components</a>
+      <a href="compare.html">Compare</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<main class="container page">
+  <h1 class="section-title">Components Catalog</h1>
+  <p class="section-sub">Search, filter and sort our complete parts library.</p>
+
+  <div class="toolbar">
+    <input type="text" id="compSearch" placeholder="🔍 Search by name or brand..." />
+    <select id="compFilter">
+      <option value="">All Categories</option>
+      <option value="cpu">CPU</option>
+      <option value="gpu">GPU</option>
+      <option value="ram">RAM</option>
+      <option value="motherboard">Motherboard</option>
+      <option value="ssd">Storage</option>
+      <option value="psu">Power Supply</option>
+      <option value="case">Case</option>
+    </select>
+    <select id="compSort">
+      <option value="">Default Sort</option>
+      <option value="price-asc">Price: Low → High</option>
+      <option value="price-desc">Price: High → Low</option>
+      <option value="perf-desc">Performance: High → Low</option>
+    </select>
+  </div>
+
+  <div class="grid grid-3" id="compGrid"></div>
+</main>
+
+<footer class="footer">
+  <div class="copyright">© 2026 PC Forge. Crafted for gamers, by gamers.</div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
