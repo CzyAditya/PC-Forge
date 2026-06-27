@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Components — PC Forge</title>
-<meta name="description" content="Browse all CPUs, GPUs, RAM, motherboards, storage, PSUs and cases." />
+<title>Laptops — PC Forge</title>
+<meta name="description" content="Browse premium gaming laptops and productivity laptops curated by PC Forge." />
 <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -27,22 +27,17 @@
 </nav>
 
 <main class="container page">
-  <h1 class="section-title">Components Catalog</h1>
-  <p class="section-sub">Search, filter and sort our complete parts library.</p>
+  <h1 class="section-title">Laptops</h1>
+  <p class="section-sub">Hand-picked gaming rigs and productivity workhorses.</p>
 
   <div class="toolbar">
-    <input type="text" id="compSearch" placeholder="🔍 Search by name or brand..." />
-    <select id="compFilter">
-      <option value="">All Categories</option>
-      <option value="cpu">CPU</option>
-      <option value="gpu">GPU</option>
-      <option value="ram">RAM</option>
-      <option value="motherboard">Motherboard</option>
-      <option value="ssd">Storage</option>
-      <option value="psu">Power Supply</option>
-      <option value="case">Case</option>
+    <input type="text" id="lapSearch" placeholder="🔍 Search laptops by name or brand..." />
+    <select id="lapFilter">
+      <option value="">All Types</option>
+      <option value="gaming">Gaming</option>
+      <option value="productivity">Productivity</option>
     </select>
-    <select id="compSort">
+    <select id="lapSort">
       <option value="">Default Sort</option>
       <option value="price-asc">Price: Low → High</option>
       <option value="price-desc">Price: High → Low</option>
@@ -50,7 +45,7 @@
     </select>
   </div>
 
-  <div class="grid grid-3" id="compGrid"></div>
+  <div class="grid grid-3" id="lapGrid"></div>
 </main>
 
 <footer class="footer">
